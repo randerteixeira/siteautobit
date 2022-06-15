@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src_home/style_home.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="poupUp_login">
+
+        <div class="poupUP_window">
+            <div class="poupUp_exit">X</div>
+            <h1>Login</h1>
+            <form action="" method="post">
+                <div class="input_login">
+                    <input type="email" name="email" id="email_login" placeholder=" email">
+                </div>
+                <div class="input_login">
+                    <input type="password" name="pass" id="pass_login " placeholder="senha">
+                </div>
+                <div class="input_btn">
+                    <input type="submit" value="entrar" id="btn_login">
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <header>
+
+        <nav class="menu">
+            <ul>
+                <li>
+                    <div class="logo"></div>
+                </li>
+                <li><a href="">home</a></li>
+                <li><a href="">contatos</a></li>
+                <li><a href="">Servicos</a></li>
+                <li><a href="">Docuemntos</a></li>
+                <li class="poupUp_action">
+                    <div class="icone">
+                        <p id="label_login">Login</p>
+                </li>
+
+
+            </ul>
+        </nav>
+
+    </header>
+    <div class="containerCarrocel">
+        <div class="carrocel">
+            <div class="carrocel_item" style="background-image:url('src_home/img_home/onibus.jpg');">1</div>
+            <div class="carrocel_item" style="background-image:url('src_home/img_home/onibus1.jpg');">2</div>
+            <div class="carrocel_item" style="background-image:url('src_home/img_home/onibus3.jpg');">3</div>
+            <div class="carrocel_item" style="background-image:url('src_home/img_home/onibus3.jpg');">4</div>
+            <div class="carrocel_item" style="background-image:url('src_home/img_home/onibus3.jpg');">5</div>
+        </div>
+    </div>
+    <div class="control_carrocel">
+        <div class=" control control1 control_selected" onclick="slide1()"></div>
+        <div class=" control control2" onclick="slide2()"></div>
+        <div class=" control control3" onclick="slide3()"></div>
+        <div class=" control control4" onclick="slide4()"></div>
+        <div class=" control control5" onclick="slide5()"></div>
+    </div>
+    <section class="sobre">
+        <div class="sobre_image">
+            <div class="sobre_image_item"></div>
+        </div>
+        <div class="sobre_text">
+            <h1>Sobre</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit possimus sint, ut iusto
+                omnis iste. Molestiae aliquam sint aspernatur fugit dolor, earum eos odio architecto
+                facere quasi culpa debitis ipsam! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Temporibus cum, possimus tenetur modi voluptates expedita corporis illo tempora blanditiis, ipsa aliquam
+                et
+                repellat accusantium beatae fuga, obcaecati doloribus neque quis. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Adipisci vel possimus quo temporibus, suscipit earum dolore! At accusantium dolore
+                minus odit soluta dolor deleniti inventore voluptatum suscipit, nam sunt aliquam!</p>
+        </div>
+    </section>
+    <div class="sobre_text">
+        <h1>rotas</h1>
+    </div>
+    <section class="rotas">
+
+        <div class="rotas_container">
+
+            <div class="btn_rotas">
+                <ul>
+                    <li id="pdr_btn" class="city_btn_selected" onclick="trasition_city('pdr')">pires do rio</li>
+                    <li id="ori_btn" onclick="trasition_city('ori')">orizona</li>
+                    <li id="cld_btn" onclick="trasition_city('cld')">Caldas Novas</li>
+
+                </ul>
+            </div>
+            <div class="rotas_display" id="pdr">
+                <div class="rotas_image"></div>
+                <div class="rotas_horarios">
+                    <div class="rotas_matutino">
+                        <div class="rota_titulo">
+                            <h1>Pires do rio _ Urutai</h1>
+                            <h1>matutino</h1>
+                        </div>
+                       
+                            <div class="tabela">
+                                <div class="item">destino</div>
+                                <div class="item">saida</div>
+                                <div class="item">fim da rota</div>
+                                <div class="item">Retorno</div>
+                            </div>
+                            <div class="tabela">
+                                <div class="item">img</div>
+                                <div class="item">6:00</div>
+                                <div class="item">6:40</div>
+                                <div class="item">11:00</div>
+                            </div>
+                      
+
+                    </div>
+                      <div class="rotas_matutino">
+                        <div class="rota_titulo">
+                            <h1>vespetino</h1>
+                        </div>
+                       
+                            <div class="tabela">
+                                <div class="item">destino</div>
+                                <div class="item">saida</div>
+                                <div class="item">fim da rota</div>
+                                <div class="item">Retorno</div>
+                            </div>
+                            <div class="tabela">
+                                <div class="item">if urutai</div>
+                                <div class="item">6:00</div>
+                                <div class="item">6:40</div>
+                                <div class="item">11:00</div>
+                            </div>
+                      
+
+                    </div>
+                    <div class="rotas_matutino">
+                        <div class="rota_titulo">
+                            <h1>Noturno</h1>
+                        </div>
+                       
+                            <div class="tabela">
+                                <div class="item">destino</div>
+                                <div class="item">saida</div>
+                                <div class="item">fim da rota</div>
+                                <div class="item">Retorno</div>
+                            </div>
+                            <div class="tabela">
+                                <div class="item">if urutai</div>
+                                <div class="item">6:00</div>
+                                <div class="item">6:40</div>
+                                <div class="item">11:00</div>
+                            </div>
+                      
+
+                    </div>
+
+                </div>
+            </div>
+                <div class="rotas_display" id="ori">
+                    <div class="rotas_image"></div>
+                    <div class="rotas_horarios">
+                        <div class="rotas_matutino">
+                            <div class="rota_titulo">
+                                <h1>Orizona_pires do rio _Urutai</h1>
+                                <h1>matutino</h1>
+                            </div>
+                           
+                                <div class="tabela">
+                                    <div class="item">destino</div>
+                                    <div class="item">saida</div>
+                                    <div class="item">fim da rota</div>
+                                    <div class="item">Retorno</div>
+                                </div>
+                                <div class="tabela">
+                                    <div class="item">img</div>
+                                    <div class="item">6:00</div>
+                                    <div class="item">6:40</div>
+                                    <div class="item">11:00</div>
+                                </div>
+                          
+    
+                        </div>
+                          <div class="rotas_matutino">
+                            <div class="rota_titulo">
+                                <h1>vespetino</h1>
+                            </div>
+                           
+                                <div class="tabela">
+                                    <div class="item">destino</div>
+                                    <div class="item">saida</div>
+                                    <div class="item">fim da rota</div>
+                                    <div class="item">Retorno</div>
+                                </div>
+                                <div class="tabela">
+                                    <div class="item">if urutai</div>
+                                    <div class="item">6:00</div>
+                                    <div class="item">6:40</div>
+                                    <div class="item">11:00</div>
+                                </div>
+                          
+    
+                        </div>
+                        <div class="rotas_matutino">
+                            <div class="rota_titulo">
+                                <h1>Noturno</h1>
+                            </div>
+                           
+                                <div class="tabela">
+                                    <div class="item">destino</div>
+                                    <div class="item">saida</div>
+                                    <div class="item">fim da rota</div>
+                                    <div class="item">Retorno</div>
+                                </div>
+                                <div class="tabela">
+                                    <div class="item">if urutai</div>
+                                    <div class="item">6:00</div>
+                                    <div class="item">6:40</div>
+                                    <div class="item">11:00</div>
+                                </div>
+                          
+    
+                        </div>
+    
+                    </div>
+            </div>
+            <div class="rotas_display" id="cld">
+                <div class="rotas_image"></div>
+                <div class="rotas_horarios">
+                    <div class="rotas_matutino">
+                        <div class="rota_titulo">
+                            <h1>Pires do rio_caldas novas</h1>
+                            <h1>matutino</h1>
+                        </div>
+                       
+                            <div class="tabela">
+                                <div class="item">destino</div>
+                                <div class="item">saida</div>
+                                <div class="item">fim da rota</div>
+                                <div class="item">Retorno</div>
+                            </div>
+                            <div class="tabela">
+                                <div class="item">img</div>
+                                <div class="item">6:00</div>
+                                <div class="item">6:40</div>
+                                <div class="item">11:00</div>
+                            </div>
+                      
+
+                    </div>
+                      <div class="rotas_matutino">
+                        <div class="rota_titulo">
+                            <h1>vespetino</h1>
+                        </div>
+                       
+                            <div class="tabela">
+                                <div class="item">destino</div>
+                                <div class="item">saida</div>
+                                <div class="item">fim da rota</div>
+                                <div class="item">Retorno</div>
+                            </div>
+                            <div class="tabela">
+                                <div class="item">if urutai</div>
+                                <div class="item">6:00</div>
+                                <div class="item">6:40</div>
+                                <div class="item">11:00</div>
+                            </div>
+                      
+
+                    </div>
+                    <div class="rotas_matutino">
+                        <div class="rota_titulo">
+                            <h1>Noturno</h1>
+                        </div>
+                       
+                            <div class="tabela">
+                                <div class="item">destino</div>
+                                <div class="item">saida</div>
+                                <div class="item">fim da rota</div>
+                                <div class="item">Retorno</div>
+                            </div>
+                            <div class="tabela">
+                                <div class="item">if urutai</div>
+                                <div class="item">6:00</div>
+                                <div class="item">6:40</div>
+                                <div class="item">11:00</div>
+                            </div>
+                      
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="rotas_pontos"></div>
+        
+
+    </section>
+
+
+    <!--script-->
+    <script src="src_home/script_home.js"></script>
+</body>
+
+</html>
