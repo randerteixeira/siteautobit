@@ -3,309 +3,336 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src_home/style_home.css">
-    <title>Document</title>
+    <title>PetDevShop - O petshop do dev</title>
+    <link rel="icon" type="image/png" href="/images/favicon.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="src_home/style_home.css" />
+
+
+    <style>
+
+    </style>
 </head>
 
 <body>
-    <div class="poupUp_login">
-
-        <div class="poupUP_window">
-            <div class="poupUp_exit">X</div>
-            <h1>Login</h1>
-            <form action="" method="post">
-                <div class="input_login">
-                    <input type="email" name="email" id="email_login" placeholder=" email">
-                </div>
-                <div class="input_login">
-                    <input type="password" name="pass" id="pass_login " placeholder="senha">
-                </div>
-                <div class="input_btn">
-                    <input type="submit" value="entrar" id="btn_login">
-                </div>
-            </form>
-
-        </div>
-    </div>
     <header>
 
-        <nav class="menu">
-            <ul>
-                <li>
-                    <div class="logo"></div>
-                </li>
-                <li><a href="">home</a></li>
-                <li><a href="">contatos</a></li>
-                <li><a href="">Servicos</a></li>
-                <li><a href="">Docuemntos</a></li>
-                <li class="poupUp_action">
-                    <div class="icone">
-                        <p id="label_login">Login</p>
-                </li>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-costumer-1 ">
+            <a class="navbar-brand" href="#"><img src="src_home/img_home/1AUTOBITLOGO.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 space-betw">
+                    <li class="nav-item active">
+                        <a class="nav-link color-nav" href="#">EMPRESA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-nav" href="#">PROJETOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-nav" href="#">SEGMENTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-nav " href="#">PRODUTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-nav " href="#">SERVICOS</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-nav " href="#">CONTATOS</a>
+                    </li>
+                </ul>
 
+            </div>
 
-            </ul>
         </nav>
 
+
     </header>
-    <div class="containerCarrocel">
-        <div class="carrocel">
-            <div class="carrocel_item" style="background-image:url('src_home/img_home/onibus.jpg');">1</div>
-            <div class="carrocel_item" style="background-image:url('src_home/img_home/onibus1.jpg');">2</div>
-            <div class="carrocel_item" style="background-image:url('src_home/img_home/onibus3.jpg');">3</div>
-            <div class="carrocel_item" style="background-image:url('src_home/img_home/onibus3.jpg');">4</div>
-            <div class="carrocel_item" style="background-image:url('src_home/img_home/onibus3.jpg');">5</div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="src_home/img_home/testebanner1.jpeg" alt="Primeiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Esse e o Tiltulo</h5>
+                    <p>Esse e um pequeno testo representativo para fins de testes no slide </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="src_home/img_home/testebanner2.jpg" alt="Segundo Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Esse e o Tiltulo</h5>
+                    <p>Esse e um pequeno testo representativo para fins de testes no slide </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="src_home/img_home/testebanner3.jpg" alt="Terceiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Esse e o Tiltulo</h5>
+                    <p>Esse e um pequeno testo representativo para fins de testes no slide </p>
+                </div>
+            </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
     </div>
-    <div class="control_carrocel">
-        <div class=" control control1 control_selected" onclick="slide1()"></div>
-        <div class=" control control2" onclick="slide2()"></div>
-        <div class=" control control3" onclick="slide3()"></div>
-        <div class=" control control4" onclick="slide4()"></div>
-        <div class=" control control5" onclick="slide5()"></div>
-    </div>
-    <section class="sobre">
-        <div class="sobre_image">
-            <div class="sobre_image_item"></div>
+
+
+
+    <section class="container-services">
+        <h1>Automação Industrial</h1>
+        <div class="services-cards">
+            <div class="image-card-services" id="image_cardi">
+                <img src="src_home/img_home/imgautomacao1.jpeg"
+                    alt="Esteiras de uma fabrica">
+                <div class="bg-card-image" id="bg_cardi">
+                    <div id='conteudo1'>
+                        <h1>saiba mais </h1><button class="btn btn-primary">Saiba mais
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-0-circle-fill" viewBox="0 0 16 16">
+                                <!-- Conteúdo do arquivo SVG aqui -->
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a4 4 0 1 0 0 8A4 4 0 0 0 8 4z" />
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+            <div class="details-card-services">
+                <p id='text1'>Desenvolvimentos personalizados de soluções em automação, alinhado às
+                    necessidades específicas de cada cliente.
+                    Abrangendo a criação detalhada dos diagramas elétricos, infraestrutura necessária e o
+                    desenvolvimento de
+                    software, permitindo o controle centralizado de todo o processo. Através do software de supervisão,
+                    é possível
+                    monitorar, controlar e acessar de forma unificada os dados críticos do sistema, que são armazenados
+                    em um
+                    banco
+                    de dados. Esses dados podem ser consultados, analisados e utilizados como documentação de validação.
+                    A gestão
+                    e o
+                    acompanhamento dos processos, juntamente com a geração de relatórios, são realizados de forma
+                    centralizada em
+                    uma única plataforma, podendo ser acessado local e remotamente proporcionando maior eficiência e
+                    segurança
+                     operacional.</p>
+            </div>
         </div>
-        <div class="sobre_text">
-            <h1>Sobre</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit possimus sint, ut iusto
-                omnis iste. Molestiae aliquam sint aspernatur fugit dolor, earum eos odio architecto
-                facere quasi culpa debitis ipsam! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Temporibus cum, possimus tenetur modi voluptates expedita corporis illo tempora blanditiis, ipsa aliquam
-                et
-                repellat accusantium beatae fuga, obcaecati doloribus neque quis. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Adipisci vel possimus quo temporibus, suscipit earum dolore! At accusantium dolore
-                minus odit soluta dolor deleniti inventore voluptatum suscipit, nam sunt aliquam!</p>
-        </div>
+
+
+
     </section>
-    <div class="sobre_text">
-        <h1>rotas</h1>
-    </div>
-    <section class="rotas">
 
-        <div class="rotas_container">
+    <section class="container-services">
+        <h1>projetos elétricos</h1>
+        <div class="services-cards">
 
-            <div class="btn_rotas">
-                <ul>
-                    <li id="pdr_btn" class="city_btn_selected" onclick="trasition_city('pdr')">pires do rio</li>
-                    <li id="ori_btn" onclick="trasition_city('ori')">orizona</li>
-                    <li id="cld_btn" onclick="trasition_city('cld')">Caldas Novas</li>
-
-                </ul>
+            <div class="details-card-services">
+                <p id='text2'>Desenvolvimento detalhados de projetos elétricos com modelos específicos como SPDA
+                    (Sistema de Proteção contra Descargas Atmosféricas), QA (Quadro de Automação),
+                    QAC (Quadro de Automação e Controle) e QD (Quadro de Distribuição). Cada modelo é apresentado com
+                    diagramas,
+                    esquemas de ligação e especificações técnicas, visando fornecer uma visão clara e precisa das
+                    melhores
+                    práticas
+                    para a implementação e manutenção desses sistemas. Orientações sobre dimensionamento,
+                    normas técnicas e exemplos práticos de projetos que atendem às exigências de segurança e
+                    eficiência energética.</p>
             </div>
-            <div class="rotas_display" id="pdr">
-                <div class="rotas_image"></div>
-                <div class="rotas_horarios">
-                    <div class="rotas_matutino">
-                        <div class="rota_titulo">
-                            <h1>Pires do rio _ Urutai</h1>
-                            <h1>matutino</h1>
-                        </div>
-                       
-                            <div class="tabela">
-                                <div class="item">destino</div>
-                                <div class="item">saida</div>
-                                <div class="item">fim da rota</div>
-                                <div class="item">Retorno</div>
-                            </div>
-                            <div class="tabela">
-                                <div class="item">img</div>
-                                <div class="item">6:00</div>
-                                <div class="item">6:40</div>
-                                <div class="item">11:00</div>
-                            </div>
-                      
 
+
+            <div class="image-card-services" id="image_cardi2">
+                <img src="src_home/img_home/imgprojetoeletrico.jpg" alt="Esteiras de uma fabrica">
+                <div class="bg-card-image" id="bg_cardi2">
+                    <div id='conteudo2'>
+                        <h1>saiba mais </h1>
+                        <button class="btn btn-primary">Saiba mais
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-0-circle-fill" viewBox="0 0 16 16">
+                                <!-- Conteúdo do arquivo SVG aqui -->
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a4 4 0 1 0 0 8A4 4 0 0 0 8 4z" />
+                            </svg></button>
                     </div>
-                      <div class="rotas_matutino">
-                        <div class="rota_titulo">
-                            <h1>vespetino</h1>
-                        </div>
-                       
-                            <div class="tabela">
-                                <div class="item">destino</div>
-                                <div class="item">saida</div>
-                                <div class="item">fim da rota</div>
-                                <div class="item">Retorno</div>
-                            </div>
-                            <div class="tabela">
-                                <div class="item">if urutai</div>
-                                <div class="item">6:00</div>
-                                <div class="item">6:40</div>
-                                <div class="item">11:00</div>
-                            </div>
-                      
-
-                    </div>
-                    <div class="rotas_matutino">
-                        <div class="rota_titulo">
-                            <h1>Noturno</h1>
-                        </div>
-                       
-                            <div class="tabela">
-                                <div class="item">destino</div>
-                                <div class="item">saida</div>
-                                <div class="item">fim da rota</div>
-                                <div class="item">Retorno</div>
-                            </div>
-                            <div class="tabela">
-                                <div class="item">if urutai</div>
-                                <div class="item">6:00</div>
-                                <div class="item">6:40</div>
-                                <div class="item">11:00</div>
-                            </div>
-                      
-
-                    </div>
-
                 </div>
             </div>
-                <div class="rotas_display" id="ori">
-                    <div class="rotas_image"></div>
-                    <div class="rotas_horarios">
-                        <div class="rotas_matutino">
-                            <div class="rota_titulo">
-                                <h1>Orizona_pires do rio _Urutai</h1>
-                                <h1>matutino</h1>
-                            </div>
-                           
-                                <div class="tabela">
-                                    <div class="item">destino</div>
-                                    <div class="item">saida</div>
-                                    <div class="item">fim da rota</div>
-                                    <div class="item">Retorno</div>
-                                </div>
-                                <div class="tabela">
-                                    <div class="item">img</div>
-                                    <div class="item">6:00</div>
-                                    <div class="item">6:40</div>
-                                    <div class="item">11:00</div>
-                                </div>
-                          
-    
-                        </div>
-                          <div class="rotas_matutino">
-                            <div class="rota_titulo">
-                                <h1>vespetino</h1>
-                            </div>
-                           
-                                <div class="tabela">
-                                    <div class="item">destino</div>
-                                    <div class="item">saida</div>
-                                    <div class="item">fim da rota</div>
-                                    <div class="item">Retorno</div>
-                                </div>
-                                <div class="tabela">
-                                    <div class="item">if urutai</div>
-                                    <div class="item">6:00</div>
-                                    <div class="item">6:40</div>
-                                    <div class="item">11:00</div>
-                                </div>
-                          
-    
-                        </div>
-                        <div class="rotas_matutino">
-                            <div class="rota_titulo">
-                                <h1>Noturno</h1>
-                            </div>
-                           
-                                <div class="tabela">
-                                    <div class="item">destino</div>
-                                    <div class="item">saida</div>
-                                    <div class="item">fim da rota</div>
-                                    <div class="item">Retorno</div>
-                                </div>
-                                <div class="tabela">
-                                    <div class="item">if urutai</div>
-                                    <div class="item">6:00</div>
-                                    <div class="item">6:40</div>
-                                    <div class="item">11:00</div>
-                                </div>
-                          
-    
-                        </div>
-    
-                    </div>
-            </div>
-            <div class="rotas_display" id="cld">
-                <div class="rotas_image"></div>
-                <div class="rotas_horarios">
-                    <div class="rotas_matutino">
-                        <div class="rota_titulo">
-                            <h1>Pires do rio_caldas novas</h1>
-                            <h1>matutino</h1>
-                        </div>
-                       
-                            <div class="tabela">
-                                <div class="item">destino</div>
-                                <div class="item">saida</div>
-                                <div class="item">fim da rota</div>
-                                <div class="item">Retorno</div>
-                            </div>
-                            <div class="tabela">
-                                <div class="item">img</div>
-                                <div class="item">6:00</div>
-                                <div class="item">6:40</div>
-                                <div class="item">11:00</div>
-                            </div>
-                      
 
-                    </div>
-                      <div class="rotas_matutino">
-                        <div class="rota_titulo">
-                            <h1>vespetino</h1>
-                        </div>
-                       
-                            <div class="tabela">
-                                <div class="item">destino</div>
-                                <div class="item">saida</div>
-                                <div class="item">fim da rota</div>
-                                <div class="item">Retorno</div>
-                            </div>
-                            <div class="tabela">
-                                <div class="item">if urutai</div>
-                                <div class="item">6:00</div>
-                                <div class="item">6:40</div>
-                                <div class="item">11:00</div>
-                            </div>
-                      
 
-                    </div>
-                    <div class="rotas_matutino">
-                        <div class="rota_titulo">
-                            <h1>Noturno</h1>
-                        </div>
-                       
-                            <div class="tabela">
-                                <div class="item">destino</div>
-                                <div class="item">saida</div>
-                                <div class="item">fim da rota</div>
-                                <div class="item">Retorno</div>
-                            </div>
-                            <div class="tabela">
-                                <div class="item">if urutai</div>
-                                <div class="item">6:00</div>
-                                <div class="item">6:40</div>
-                                <div class="item">11:00</div>
-                            </div>
-                      
-
-                    </div>
-
-                </div>
-            </div>
-            <div class="rotas_pontos"></div>
-        
 
     </section>
 
 
-    <!--script-->
-    <script src="src_home/script_home.js"></script>
+    <section class="container-cards-s2">
+        <h1>SERVICOS</h1>
+
+        <div class="cards-s2">
+            <div class="item-s2" id="item-s2-1">
+                <div class="bg-item-s2">
+                    <h3>Automação Industrial</h3> <button class="btn btn-primary">Saiba mais <svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-0-circle-fill" viewBox="0 0 16 16">
+                            <!-- Conteúdo do arquivo SVG aqui -->
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a4 4 0 1 0 0 8A4 4 0 0 0 8 4z" />
+                        </svg></button>
+                </div>
+            </div>
+            <div class="item-s2" id="item-s2-2">
+                <div class="bg-item-s2">
+                    <h3> Projetos Eletricos</h3> <button class="btn btn-primary">Saiba mais
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-0-circle-fill" viewBox="0 0 16 16">
+                            <!-- Conteúdo do arquivo SVG aqui -->
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a4 4 0 1 0 0 8A4 4 0 0 0 8 4z" />
+                        </svg></button>
+                </div>
+            </div>
+            <div class="item-s2" id="item-s2-3">
+                <div class="bg-item-s2">
+                    <h3>Energia Solar</h3> <button class="btn btn-primary">Saiba mais
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-0-circle-fill" viewBox="0 0 16 16">
+                            <!-- Conteúdo do arquivo SVG aqui -->
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a4 4 0 1 0 0 8A4 4 0 0 0 8 4z" />
+                        </svg></button>
+                </div>
+            </div>
+
+            <div class="item-s2" id="item-s2-4">
+                <div class="bg-item-s2">
+                    <h3>NR12</h3> <button class="btn btn-primary">Saiba mais
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-0-circle-fill" viewBox="0 0 16 16">
+                            <!-- Conteúdo do arquivo SVG aqui -->
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a4 4 0 1 0 0 8A4 4 0 0 0 8 4z" />
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <section class="container-s3">
+        <h1>As melhores marcas </h1>
+        <div class="icons-s3">
+            <div class="item-icon-s3"><img src="src_home/img_home/wago.png" alt=""></div>
+            <div class="item-icon-s3"><img src="src_home/img_home/weg.png" alt=""></div>
+            <div class="item-icon-s3"><img src="src_home/img_home/sew-eurodrive.png" alt=""></div>
+            <div class="item-icon-s3"><img src="src_home/img_home/siemens.png" alt=""></div>
+            <div class="item-icon-s3"><img src="src_home/img_home/schneider.png" alt=""></div>
+            <div class="item-icon-s3"><img src="src_home/img_home/omron.png" alt=""></div>
+            <div class="item-icon-s3"><img src="src_home/img_home/novuss.png" alt=""></div>
+            <div class="item-icon-s3"><img src="src_home/img_home/mitsubish.png" alt=""></div>
+            <div class="item-icon-s3"><img src="src_home/img_home/ifm.png" alt=""></div>
+            <div class="item-icon-s3"><img src="src_home/img_home/festo.png" alt=""></div>
+            <div class="item-icon-s3"><img src="src_home/img_home/allen-bradley.png" alt=""></div>
+            <div class="item-icon-s3"><img src="src_home/img_home/abb.png" alt=""></div>
+            <div class="item-icon-s3"><img src="src_home/img_home/danfoss.png" alt=""></div>
+            <div class="item-icon-s3"><img src="src_home/img_home/intelbras.png" alt=""></div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+    <section>
+
+        <div class="container-s4">
+            <h1>Retrofitting</h1>
+
+            <div class="container-item-s4">
+                <div class="item-s4-img">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="src_home/img_home/imgantesdepois.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="src_home/img_home/imgantesdepois.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="src_home/img_home/imgantesdepois.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="item-s4-text">Retrofitting é o processo de modernização de
+                    máquinas, até então ultrapassadas, fora de linha ou inadequadas às normas
+                    técnicas da indústria. No processo, são atualizadas interface, peças e são
+                    reavaliados itens de segurança essenciais ao bem estar do colaborador / equipe que utiliza
+                    o maquinário.
+                    <button class="btn btn-primary">Saiba mais
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-0-circle-fill" viewBox="0 0 16 16">
+                            <!-- Conteúdo do arquivo SVG aqui -->
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a4 4 0 1 0 0 8A4 4 0 0 0 8 4z" />
+                        </svg></button>
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <footer class="fontColor, container">
+        Todos os direitos reservados &copy RTeixeira-2024
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src='src_home/script/scripti.js'></script>
 </body>
 
 </html>
