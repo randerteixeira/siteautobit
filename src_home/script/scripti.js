@@ -37,14 +37,14 @@ window.addEventListener('scroll', function() {
         // O usuário está rolando para baixo
         console.log(posicaoAtualScroll);
        if(posicaoAtualScroll>100){
-        document.getElementById('text1').style.fontSize='25px'
+        //document.getElementById('text1').style.fontSize='25px'
         document.getElementById('image_cardi').style.width='50%'
        }
 
         // O usuário está rolando para baixo
         
        if(posicaoAtualScroll>800){
-        document.getElementById('text2').style.fontSize='25px'
+        //document.getElementById('text2').style.fontSize='25px'
         document.getElementById('image_cardi2').style.width='50%'
        }
        if(posicaoAtualScroll>1500){
