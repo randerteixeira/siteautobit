@@ -3,15 +3,17 @@
     --main:rgba(17, 36, 55, 0.973);
     --main2:rgb(0,159,172);
     --fontheader: 30px;
-    --fontcorpo:20px;
+    --fontcorpo:18px;
 }
 
 * {
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
+    
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
+   
     background-color: var(--pagebg);
 }
 
@@ -19,7 +21,10 @@ body {
     height: 80vh;
 }
 
-
+.navbar img{
+    width: 100px;
+    height: 60px;
+}
 
 
 .menu_principal{
@@ -79,7 +84,7 @@ background-color:rgba(17, 36, 55, 0.562);
     font-size: var(--fontheader);
     color: var(--main);
     margin-bottom: 40px;
-    font-family:montserrat, sans-serif;
+  
     text-transform: uppercase;
     font-weight: 900;
     
