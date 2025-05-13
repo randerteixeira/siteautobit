@@ -358,7 +358,7 @@ background-image: url('img_home/engenharia.png');
 }
 
 .carousel-item img{
-    height: 100%;
+
 }
 .item-s4-text{
     font:var(--fontcorpo);
